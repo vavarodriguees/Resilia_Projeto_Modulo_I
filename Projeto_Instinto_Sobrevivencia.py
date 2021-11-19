@@ -87,7 +87,7 @@ Supervisor explica que com as habilidades de Iron ele poderá competir em um tor
 uma habilidade diferente. 
 
 Iron precisa tomar uma decisão: Qual decisão tomar?\n''')
-    texto_personagem_um = '''1 - Ficar e esperar sua sentença . 
+    texto_personagem_um = '''1 - Ficar e esperar sua sentença. 
 2 - Encarar o torneio. 
 Qual opção seguir?\n'''
     escolha_usuario = fazer_escolha(texto_personagem_um)
@@ -127,9 +127,70 @@ Qual opção seguir?\n'''
         print(''' --- GAME OVER --- 
 Seria caçado e morto, sem chance de recorrer sua pena.''')
 
+# --------------------- Contexto Iron ---------------------------------
+
+# --------------------- Contexto Percy ---------------------------------
+
+def personagem_tres_fase_tres():
+    print('''Percy precisa revidar e se defender ao mesmo tempo, para Laura ele é um traidor.
+Ela está descontando toda sua raiva, Laura possui os poderes elétricos e Percy, poder do fogo. 
+No meio da batalha sangrenta, Percy precisa tomar uma decisão: Qual decisão tomar? 
+\n''')
+    texto_personagem_um = '''1 - Laura está sendo atacada por um prateado, que acredita estar 
+ajudando Percy, ele tem que escolher entre deixar Laura morrer. 
+2 - Expor seu lado sobre verdadeiro sobre sua opinião aos vermelhos e a Laura.  
+Qual opção seguir?\n'''
+    escolha_usuario = fazer_escolha(texto_personagem_um)
+    if escolha_usuario == 1:
+        print(''' --- GAME OVER --- ''')
+    else:
+        print('''--- VOCÊ VENCEU!!! ---
+Pelos seus instintos, defende Laura, atacando o prateado. Percy consegue tirar Laura da batalha, 
+a partir disso eles criam um laço para derrubar o Reinado do Rei.  ''') 
+
+def personagem_tres_fase_dois():
+    print(''' -------------------- Fase Dois --------------------
+Deixando Laura, Percy pode trabalhar dentro da realeza, para planejar como poderá acabar 
+com as castas e consegui igualdade do seu povo. 
+
+Porém, em poucos dias, começa uma rebelião, contra os prateados, não é um povo vermelho comum, é um 
+povo vermelho com habilidades prateadas. 
+
+Está acontecendo um confronto, queima roupa, na praça principal da cidade. Tem sangue prateado e vermelho
+para todos os lados e no meio de tudo isso está Laura, com olhos fixos em Percy pronto para atacá-lo. 
+Percy precisa tomar uma decisão: Qual decisão tomar? ''')
+    texto_personagem_um = '''1 - Revidar o ataque de Laura. 
+2 - Apenas se defender. 
+Qual opção seguir?\n'''
+    escolha_usuario = fazer_escolha(texto_personagem_um)
+    if escolha_usuario == 1:
+        personagem_tres_fase_tres()
+    else:
+        print(''' --- GAME OVER --- ''')
 
 def personagem_tres_fase_um():
-    print("Personagem 3 escolhido")
+    print('--- Percy ---')
+    print('''Percy é herdeiro do trono prateado, jovem e forte! Seu pai é o rei de Montevidéu, um reino
+onde pessoas de sangue prateado é soberano sobre as pessoas de sangue vermelho. 
+
+Percy, não tem afeição por essas classes importas pelos prateados, quer o reinado para que o povo de Montevidéu,
+seja um só. No meio de tanta turbulência, ele encontra Laura, a sangue vermelha rebelde. Desde então, mesmo com 
+a diferença de classes eles começam a entender que possuem qualidades e as mesmas vontades com relação ao povo 
+prateado e vermelho. 
+
+Com o passar do tempo, o rei, começa a desconfiar de Percy, decide colocar seus homens para acabar com essa amizade. 
+Percy precisa tomar uma decisão: Qual decisão tomar? \n''')
+    texto_personagem_um = '''1 - Deixar Laura e aceitar a decisão de seu pai de separá-los e voltar para o meio das 
+pessoas prateadas. 
+2 - Ficar com ela e enfrentar seu pai.  
+Qual opção seguir?\n'''
+    escolha_usuario = fazer_escolha(texto_personagem_um)
+    if escolha_usuario == 1:
+        personagem_tres_fase_dois()
+    else:
+        print(''' --- GAME OVER --- ''')
+
+# --------------------- Contexto Percy ---------------------------------
 
 def inicio():
     print(
