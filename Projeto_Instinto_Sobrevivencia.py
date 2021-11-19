@@ -77,8 +77,56 @@ Qual opção seguir?\n'''
 # --------------------- Contexto Ela ---------------------------------
 
 # --------------------- Contexto Iron ---------------------------------
+def personagem_dois_fase_tres():
+    print('''como Iron sabe como funciona o seu regime do seu governo, sabem que irão deixá-lo por dias 
+na cela sem comida, ou com pouca. E sabendo que seu corpo precisa mais de água do que a comida, prioriza
+a água e quando realmente precisar, comer o sanduíche. 
+
+Dias se passam... e Iron está cada dia mais fraco.. Quando aparece um supervisor e o carrega para uma sala. 
+Supervisor explica que com as habilidades de Iron ele poderá competir em um torneio mortal, cada pessoa tem 
+uma habilidade diferente. 
+
+Iron precisa tomar uma decisão: Qual decisão tomar?\n''')
+    texto_personagem_um = '''1 - Ficar e esperar sua sentença . 
+2 - Encarar o torneio. 
+Qual opção seguir?\n'''
+    escolha_usuario = fazer_escolha(texto_personagem_um)
+    if escolha_usuario == 1:
+        print(''' --- GAME OVER --- ''')
+    else:
+        print('''--- VOCÊ VENCEU!!! ---
+Mesmo sabendo que é um torneio mortal, ele já estaria morto se continuasse na cadeia, pelo menos 
+se vencer, estará livre e será respeitado pelo seu feito. ''') 
+
+def personagem_dois_fase_dois():
+    print('''Iron decide ficar, desta maneira enfrentar todas as consequências. 
+Iron é preso e colocado em uma cela, contém uma garrafa d’agua, cerca de 1L e um sanduíche. 
+Iron precisa tomar uma decisão: Qual decisão tomar?\n''')
+    texto_personagem_um = '''1 - Comer o sanduíche e tomar água aos poucos. 
+2 - Não comer o sanduíche agora e ir tomando pouca água. 
+Qual opção seguir?\n'''
+    escolha_usuario = fazer_escolha(texto_personagem_um)
+    if escolha_usuario == 1:
+        print(''' --- GAME OVER --- ''')
+    else:
+        personagem_dois_fase_tres()
+        
+
 def personagem_dois_fase_um():
-    print()
+    print('--- IRON ---')
+    print('''Iron é um guerreiro, trabalha todos os dias para sobreviver, mas a condição de sua vida é extremamente precária. 
+Então, por necessidade, ele resolver furtar pães de uma padaria. Ele tenta disfarçar e não ser reconhecido, mas está condenado. 
+Iron precisa tomar uma decisão: Qual decisão tomar?\n''')
+    texto_personagem_um = '''1 - Enfrentar as consequências. 
+2 - Fugir daquela cidade. 
+Qual opção seguir?\n'''
+    escolha_usuario = fazer_escolha(texto_personagem_um)
+    if escolha_usuario == 1:
+        personagem_dois_fase_dois()
+    else:
+        print(''' --- GAME OVER --- 
+Seria caçado e morto, sem chance de recorrer sua pena.''')
+
 
 def personagem_tres_fase_um():
     print("Personagem 3 escolhido")
