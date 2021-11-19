@@ -11,7 +11,8 @@ def fazer_escolha(texto):
 # --------------------- Contexto Ela ---------------------------------
 
 def personagem_um_fase_quatro():
-    print('''Isqueiro: Muito bem, agora Ela precisa queimar as cordas o mais rápido possível, enquanto os capangas estiver distraído. 
+    print('''-------------------- Fase Quatro --------------------
+ Muito bem, agora Ela precisa queimar as cordas o mais rápido possível, enquanto os capangas estiver distraído. 
 Ela tem que ser ágil, pois depende dos sequestradores não sentirem o cheiro da corda queimada. 
 Ela precisa tomar mais uma decisão, ela não sabe onde está provavelmente num lugar afastado da cidade.\n''')
     texto_personagem_um = '''1 - Correr para um lugar seguro e escondido!
@@ -27,7 +28,8 @@ Com fome e cede, chega o final da estrada, onde encontra uma casa pacata, onde p
         print('--- GAME OVER ---')   
 
 def personagem_um_fase_tres():
-    print('''Ela começa analisar como poderia sair daquela situação, sabe que quanto mais tempo passar nas mãos dos bandidos,
+    print('''-------------------- Fase Três --------------------
+Ela começa analisar como poderia sair daquela situação, sabe que quanto mais tempo passar nas mãos dos bandidos,
 menos chance de sair viva ela terá. 
 Ela verifica no senário, um isqueiro de um dos sequestradores e uma chave de fenda, qual a decisão mais sensata a se tomar?
 A pergunta é: o que você faria?
@@ -41,7 +43,7 @@ A pergunta é: o que você faria?
         print('--- GAME OVER ---')
 
 def personagem_um_fase_dois():
-    print('''
+    print(''' -------------------- Fase Dois --------------------
 Ela entra no carro! Já tinha visto o sujeito se esgueirando pelo quarteirão algumas vezes. Após alguns metros... 
 NADA... Tudo fica escuro. 
 Ela acorda num lugar escuro, sombrio, amarrada, com três homens encapuzados na sua frente! Entra em pânico com a cena a sua frente, 
@@ -78,7 +80,8 @@ Qual opção seguir?\n'''
 
 # --------------------- Contexto Iron ---------------------------------
 def personagem_dois_fase_tres():
-    print('''como Iron sabe como funciona o seu regime do seu governo, sabem que irão deixá-lo por dias 
+    print(''' -------------------- Fase Três --------------------
+como Iron sabe como funciona o seu regime do seu governo, sabem que irão deixá-lo por dias 
 na cela sem comida, ou com pouca. E sabendo que seu corpo precisa mais de água do que a comida, prioriza
 a água e quando realmente precisar, comer o sanduíche. 
 
@@ -99,7 +102,8 @@ Mesmo sabendo que é um torneio mortal, ele já estaria morto se continuasse na 
 se vencer, estará livre e será respeitado pelo seu feito. ''') 
 
 def personagem_dois_fase_dois():
-    print('''Iron decide ficar, desta maneira enfrentar todas as consequências. 
+    print('''-------------------- Fase Dois --------------------
+Iron decide ficar, desta maneira enfrentar todas as consequências. 
 Iron é preso e colocado em uma cela, contém uma garrafa d’agua, cerca de 1L e um sanduíche. 
 Iron precisa tomar uma decisão: Qual decisão tomar?\n''')
     texto_personagem_um = '''1 - Comer o sanduíche e tomar água aos poucos. 
@@ -132,7 +136,8 @@ Seria caçado e morto, sem chance de recorrer sua pena.''')
 # --------------------- Contexto Percy ---------------------------------
 
 def personagem_tres_fase_tres():
-    print('''Percy precisa revidar e se defender ao mesmo tempo, para Laura ele é um traidor.
+    print(''' -------------------- Fase Três --------------------
+Percy precisa revidar e se defender ao mesmo tempo, para Laura ele é um traidor.
 Ela está descontando toda sua raiva, Laura possui os poderes elétricos e Percy, poder do fogo. 
 No meio da batalha sangrenta, Percy precisa tomar uma decisão: Qual decisão tomar? 
 \n''')
